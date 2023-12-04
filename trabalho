@@ -2,9 +2,9 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Meu Primeiro Site</title>
+    <title>Meu Site Aprimorado</title>
     <style>
-        /* Estilos CSS podem ser adicionados aqui ou em um arquivo separado */
+        /* Estilos CSS */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -14,7 +14,7 @@
         header {
             background-color: #333;
             color: #fff;
-            padding: 10px 20px;
+            padding: 20px 0;
             text-align: center;
         }
         nav ul {
@@ -46,12 +46,27 @@
             bottom: 0;
             width: 100%;
         }
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .sidebar {
+            flex-basis: 30%;
+            padding: 10px;
+            background-color: #eee;
+        }
+        .main-article {
+            flex-basis: 65%;
+            padding: 10px;
+            background-color: #fff;
+        }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Meu Site</h1>
+    <h1>Meu Site Aprimorado</h1>
 </header>
 
 <nav>
@@ -62,9 +77,17 @@
     </ul>
 </nav>
 
-<section>
-    <h2>Seção Principal</h2>
-    <p>Bem-vindo ao meu site! Aqui você pode escrever sobre o que quiser.</p>
+<section class="main-content">
+    <aside class="sidebar">
+        <h2>Sidebar</h2>
+        <p>Algumas informações extras podem ficar aqui.</p>
+    </aside>
+
+    <article class="main-article">
+        <h2>Artigo Principal</h2>
+        <p>Bem-vindo ao meu site! Este é o conteúdo principal.</p>
+        <p>Aqui você pode escrever sobre vários tópicos interessantes.</p>
+    </article>
 </section>
 
 <footer>
